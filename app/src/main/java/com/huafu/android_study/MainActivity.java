@@ -1,24 +1,32 @@
 package com.huafu.android_study;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
-import java.util.function.Supplier;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    @RequiresApi(api = Build.VERSION_CODES.N)
-
+    private Button mbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mbtn = findViewById(R.id.tv_testBtn1);
+        mbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,CalculatorMainActivity.class);
+                startActivity(intent);
 
-        Supplier<String> supplier = ()-> "hello";
-        System.out.println(supplier.get());
+            }
+        });
     }
+
+
+
 }

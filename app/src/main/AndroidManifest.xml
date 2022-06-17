@@ -10,8 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Study">
         <activity
-            android:name=".Test1111"
+            android:name=".CalculatorMainActivity"
             android:exported="false" />
+        <activity
+            android:name=".ImageTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageScaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonEnableActivity"
+            android:exported="false" />
+        <activity android:name=".ButtonClickActivity" />
+        <activity android:name=".ButtonStyleActivity" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".GridLayoutActivity" />
+        <activity android:name=".RelativeLayoutActivity" />
+        <activity android:name=".LinearLayoutActivity" />
+        <activity android:name=".ViewGravityActivity" />
+        <activity android:name=".ViewMarginActivity" />
+        <activity android:name=".ViewBorderActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

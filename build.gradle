@@ -1,9 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+//用到了哪些插件，版本号是多少
 plugins {
     id 'com.android.application' version '7.1.2' apply false
     id 'com.android.library' version '7.1.2' apply false
 }
 
+//定义了一个任务（Clear Project），用来删除app/build目录下的文件
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
